@@ -1,10 +1,10 @@
-# JSON/XML Editor
+# Payload Studio
 
-![JSON/XML Editor Showcase](./public/showcase.gif)
+![Payload Studio showcase](./public/showcase.gif)
 
 ## Application Overview
 
-This is a browser-based tool that helps you paste, validate, and explore JSON or XML quickly.
+Payload Studio is a browser-based tool that helps you paste, validate, and explore JSON or XML quickly.
 It is designed for day-to-day developer tasks like checking payloads, inspecting nested data, and correcting invalid input without switching between multiple tools.
 You can move between visual tree and table views, then edit values in place when you need fast fixes.
 The interface stays clean and focused so the workflow feels simple even with large documents.
@@ -41,4 +41,4 @@ npm run dev
 4. Paste your data and validate.
 5. Explore and edit using tree or table views.
 
-*For more details, check out the [Full Changelog](https://github.com/Deep0902/JSON-Editor/releases)*
+*For more details, check out the [Full Changelog](https://github.com/Deep0902/Payload-Studio/releases)*

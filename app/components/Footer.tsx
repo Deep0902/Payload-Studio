@@ -7,7 +7,7 @@ const Footer = () => {
         <p className="text-center text-xs md:text-sm">
           Built with ❤️ Need help or want to connect? &nbsp;
           <a
-            href="https://github.com/Deep0902/JSON-Editor/issues"
+            href="https://github.com/Deep0902/Payload-Studio/issues"
             target="_blank"
             rel="noreferrer noopener"
             className="rounded-md px-2 py-1 font-medium text-gray-900 transition hover:bg-gray-200"

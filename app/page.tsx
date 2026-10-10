@@ -211,7 +211,7 @@ export default function Home() {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
-            JSON & XML Editor
+            Payload Studio
           </h1>
           <p className="text-gray-600">
             Paste your data, validate it, and view it in multiple formats with

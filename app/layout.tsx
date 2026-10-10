@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "JSON & XML Editor",
+  title: "Payload Studio",
   description:
-    "A real-time JSON & XML editor with validation, tree view, table view, and editing capabilities without Ads!",
+    "Payload Studio is a real-time JSON and XML editor with validation, tree view, table view, and editing capabilities.",
   icons: {
     icon: "/code.svg",
     shortcut: "/code.svg",
