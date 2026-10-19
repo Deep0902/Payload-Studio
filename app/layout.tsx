@@ -15,14 +15,71 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Payload Studio",
+  title: {
+    default: "Payload Studio | JSON and XML Editor",
+    template: "%s | Payload Studio",
+  },
   description:
-    "Payload Studio is a real-time JSON and XML editor with validation, tree view, table view, and editing capabilities.",
+    "Validate, explore, and edit JSON and XML payloads in your browser. Inspect nested data in tree or table views and make quick corrections in place.",
+  applicationName: "Payload Studio",
+  keywords: [
+    "JSON editor",
+    "XML editor",
+    "JSON validator",
+    "XML validator",
+    "JSON viewer",
+    "XML viewer",
+    "JSON tree viewer",
+    "XML tree viewer",
+    "JSON table view",
+    "XML table view",
+    "payload inspector",
+    "Payload Studio",
+  ],
   icons: {
     icon: "/code.svg",
     shortcut: "/code.svg",
     apple: "/code.svg",
   },
+  openGraph: {
+    type: "website",
+    siteName: "Payload Studio",
+    title: "Payload Studio | JSON and XML Editor",
+    description:
+      "Validate, explore, and edit JSON and XML payloads in your browser with interactive tree and table views.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Payload Studio | JSON and XML Editor",
+    description:
+      "Validate, explore, and edit JSON and XML payloads in your browser with interactive tree and table views.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  category: "developer tools",
+  verification: {
+    google: "tSXpeMbPETyEgRx18FiMxCpxY7Q4A0R_Uvd99k9E6ok",
+  },
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Payload Studio",
+  applicationCategory: "DeveloperApplication",
+  operatingSystem: "Any",
+  description:
+    "A browser-based tool to validate, explore, and edit JSON and XML payloads using interactive tree and table views.",
+  inLanguage: "en",
 };
 
 export default function RootLayout({
@@ -32,6 +89,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
